@@ -1,22 +1,3 @@
-/*
-var maxProfit = function(prices) {
-	let profit = 0;
-	let i  = 0;
-	
-	let cheapest  = prices[0];
-	while (i < prices.length){
-		if (prices[i] < cheapest){
-			cheapest = prices[i];
-		}else if (prices[i] - cheapest > profit){
-			profit = prices[i] - cheapest;
-		}
-
-		i++
-	}
-
-	return profit
-};
-*/
 
 var maxProfit = function(prices){
 	let profit = 0;
@@ -27,7 +8,7 @@ var maxProfit = function(prices){
 		if (dayprofit < 0){
 			i++;
 		}else{
-			profit += dayprofit; 
+			profit += dayprofit;
 			i++;
 		}
 
